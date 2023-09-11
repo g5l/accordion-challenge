@@ -12,6 +12,13 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito:wght@700;800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet"
+        />
+        <script async src="https://kit.fontawesome.com/492a301f05.js" crossOrigin="anonymous"></script>
+      </head>
       <body className={inter.className}>
         {children}
       </body>
