@@ -1,34 +1,112 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Accordion Challenge
 
-## Getting Started
+Welcome to the Accordion Challenge project. This repository contains a Next.js based web application to showcase an profile tasks widget component UI
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+* **Framework**: Next.js
+* **Language**: TypeScript
+* **Styling**: Styled-Components
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Prerequisites
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Node.js v14+ (v20.6.0 preferred for types)
+* npm (packaged with Node.js)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Setup & Installation
 
-## Learn More
+1. Clone this repository.
+   ```
+    git clone [repo-link]
+   ```
+2. Navigate into the project directory.
+   ```
+    cd accordion-challenge
+   ```
+3. Install the necessary packages.
+   ```
+    npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In the project directory, you can run:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+* **Development Mode**
 
-## Deploy on Vercel
+  ````
+  npm run dev
+  ````
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000/) to view it in the browser. The page will reload if you make edits.
+* **Production Build**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  ```
+  npm run build
+  ```
+
+  Builds the app for production to the `.next` folder. This optimizes React code for the best performance.
+* **Start Production Server**
+
+  ```
+  npm run start
+  ```
+
+  Starts the application in production mode. This requires `build` to have been run first.
+* **Lint**
+
+  ```
+  npm run lint
+  ```
+
+  Analyze your codebase using `eslint` and reports linting errors.
+
+
+## Project Structure
+
+- **api**
+
+  The Api layTo Communicate the application with an api
+- **components**
+
+  To reuse and organize better parts of the application
+
+  Folder pattern:
+
+  ```
+    index.ts              - To export the component
+    Component.tsx         - Component code
+    style.tsx             - Component style
+    types.ts (if needed)  - Component types
+  ```
+- **pages**
+
+  Mains application pages
+- **service**
+
+  Maintain the company's rule, and it can use the API layer or other service
+- styles
+- types
+
+## Technologies & Packages
+
+Here's a quick overview of the main technologies and packages used:
+
+* **Core**:
+  * [Next.js](https://nextjs.org/) - A React framework.
+  * [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+  * [TypeScript](https://www.typescriptlang.org/) - Superset of JavaScript with static type definitions.
+* **Styling**:
+  * [Styled-Components](https://styled-components.com/) - Library for component-level styles in React applications.
+* **Utilities**:
+  * [uuid](https://www.npmjs.com/package/uuid) - Library to generate unique identifiers.
+* **Linting**:
+  * [ESLint](https://eslint.org/) - Tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+
+
+## Todo list
+
+
+#### Missing features
+
+- [ ]  Create global variables to reuse it on component's style file
