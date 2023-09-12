@@ -1,6 +1,6 @@
-'use client'
-import React from 'react'
-import {Container, Header, Title} from './styles'
+'use client';
+import React from 'react';
+import {Container, Header, Icon, Title} from './styles';
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
 import {ProfileTask, ProfileTasksGroup} from "@/types/profile";
 import AccordionGroup from "@/components/AccordionGroup";
@@ -23,27 +23,31 @@ const TasksWidget: React.FC<Props> = (props) => {
       tasks: group.tasks.map(task => task.id === event.id ? {...task, checked: event.checked} : task)
     }));
     props.onChange(updatedTasksGroups);
-  }
+  };
 
   const displayGroups = () => {
-    return props.tasksGroups.map((tasksGroup, index) => (
-      <Accordion key={index} title={tasksGroup.name}>
-        {displayTasks(tasksGroup.tasks)}
-      </Accordion>
-    ))
-  }
+    return props.tasksGroups.map((tasksGroup, index) => {
+      const isCompleted = tasksGroup.tasks.every((task) => task.checked);
+      const icon = <Icon className={`fa-light fa-clipboard${isCompleted ? "-check" : ""}`}/>;
+      return (
+        <Accordion key={index} title={tasksGroup.name} isCompleted={isCompleted} icon={icon}>
+          {displayTasks(tasksGroup.tasks)}
+        </Accordion>
+      );
+    });
+  };
 
   const displayTasks = (tasks: ProfileTask[]) => {
-    return tasks.map((task, index) => (
+    return tasks.map((task) => (
       <Checkbox
-        key={index}
+        key={task.id}
         id={task.id}
         label={task.description}
         checked={task.checked}
         onChange={handleCheckboxChange}
       />
-    ))
-  }
+    ));
+  };
 
   return (
     <Container>
@@ -55,7 +59,7 @@ const TasksWidget: React.FC<Props> = (props) => {
         </AccordionGroup>
       </Header>
     </Container>
-  )
-}
+  );
+};
 
 export default TasksWidget;

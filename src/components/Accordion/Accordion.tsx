@@ -1,9 +1,10 @@
-import React, {useState} from 'react'
-import {Container, Content, Header, HeaderButton} from './styles'
+import React, {useState} from 'react';
+import {Container, Content, Header, HeaderButton, Title} from './styles';
 
 type Props = {
   title: string,
-  // isComplete: boolean,
+  isCompleted: boolean,
+  icon?: React.ReactElement,
   children: React.ReactNode,
 }
 
@@ -12,12 +13,15 @@ const Accordion: React.FC<Props> = (props) => {
 
   const displayIconButton = () => (
     <i className={`fa-sharp fa-solid fa-chevron-${isOpen ? "up" : "down"}`}></i>
-  )
+  );
 
   return (
     <Container>
-      <Header onClick={() => setIsOpen(!isOpen)}>
-        {props.title}
+      <Header onClick={() => setIsOpen(!isOpen)} $isCompleted={props.isCompleted}>
+        <Title>
+          {props.icon && props.icon}
+          {props.title}
+        </Title>
         <HeaderButton>
           {isOpen ? "Hide" : "Show"}
           {displayIconButton()}
@@ -29,8 +33,8 @@ const Accordion: React.FC<Props> = (props) => {
         </Content>
       )}
     </Container>
-  )
+  );
 
-}
+};
 
 export default Accordion;

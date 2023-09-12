@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import {Props} from './types';
-import {Bar, Progress} from './styles'
+import {Bar, Progress} from './styles';
 
 const ProgressBar: React.FC<Props> = (props) => (
   <Bar>
@@ -8,6 +8,6 @@ const ProgressBar: React.FC<Props> = (props) => (
       {props.percentage}%
     </Progress>
   </Bar>
-)
+);
 
 export default ProgressBar;
