@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Input} from './styles';
+import {Checkmark, Container, Input, Label} from './styles';
 import {CheckEvent} from "@/types/common";
 
 type Props = {
@@ -17,12 +17,13 @@ const Checkbox: React.FC<Props> = (props) => {
 
   return (
     <Container htmlFor={props.id}>
+      <Label>{props.label}</Label>
       <Input
         id={props.id}
         checked={props.checked}
         onChange={updateChecked}
       />
-      {props.label}
+      <Checkmark/>
     </Container>
   );
 };
