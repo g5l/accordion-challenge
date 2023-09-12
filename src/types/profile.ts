@@ -4,7 +4,7 @@ export type ProfileTasksGroup = {
 }
 
 export type ProfileTask = {
-  id: number,
+  id: string,
   description: string,
   value: number,
   checked: boolean

@@ -1,4 +1,4 @@
 export type CheckEvent = {
-  id: number,
+  id: string,
   checked: boolean
 }
