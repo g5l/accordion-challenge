@@ -61,12 +61,11 @@ In the project directory, you can run:
 
   Analyze your codebase using `eslint` and reports linting errors.
 
-
 ## Project Structure
 
 - **api**
 
-  The Api layTo Communicate the application with an api
+  The Api layer to communicate the application with external server
 - **components**
 
   To reuse and organize better parts of the application
@@ -81,12 +80,19 @@ In the project directory, you can run:
   ```
 - **pages**
 
-  Mains application pages
+  Main application pages (Pages Router)
+- **app**
+
+  The app router
 - **service**
 
-  Maintain the company's rule, and it can use the API layer or other service
+  Maintain the company's rules, and it can use the API layer or other service
 - styles
+
+  Maintain the global style
 - types
+
+  Maintain the global types
 
 ## Technologies & Packages
 
@@ -103,9 +109,7 @@ Here's a quick overview of the main technologies and packages used:
 * **Linting**:
   * [ESLint](https://eslint.org/) - Tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
 
-
 ## Todo list
-
 
 #### Missing features
 
