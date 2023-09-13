@@ -2,6 +2,17 @@
 
 Welcome to the Accordion Challenge project. This repository contains a Next.js based web application to showcase an profile tasks widget component UI
 
+<table>
+<tr>
+<td>
+    <img src="https://github.com/g5l/accordion-challenge/assets/20099133/01c69d7f-7d89-4b31-bbd2-1f301d86f064" alt="desktop"/>
+</td>
+<td>
+    <img src="https://github.com/g5l/accordion-challenge/assets/20099133/0d7a62cd-69ca-4506-82c4-e33471a6340a" alt="mobile"/>
+</td>
+</tr>
+</table>
+
 ## Overview
 
 * **Framework**: Next.js
@@ -87,10 +98,10 @@ In the project directory, you can run:
 - **service**
 
   Maintain the company's rules, and it can use the API layer or other service
-- styles
+- **styles**
 
   Maintain the global style
-- types
+- **types**
 
   Maintain the global types
 
