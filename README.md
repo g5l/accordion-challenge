@@ -5,10 +5,10 @@ Welcome to the Accordion Challenge project. This repository contains a Next.js b
 <table>
 <tr>
 <td>
-    <img src="https://github.com/g5l/accordion-challenge/assets/20099133/01c69d7f-7d89-4b31-bbd2-1f301d86f064" alt="desktop"/>
+    <img src="https://github.com/g5l/accordion-challenge/assets/20099133/ac24a7c8-043b-4c82-b240-ef5b6cea9817" alt="desktop"/>
 </td>
 <td>
-    <img src="https://github.com/g5l/accordion-challenge/assets/20099133/0d7a62cd-69ca-4506-82c4-e33471a6340a" alt="mobile"/>
+    <img src="https://github.com/g5l/accordion-challenge/assets/20099133/ad8836cd-9a14-49e7-ac76-540955f9bd79" alt="mobile"/>
 </td>
 </tr>
 </table>
